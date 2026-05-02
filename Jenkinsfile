@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/sivabandaru44/EC2_cleanup.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'pip install boto3'
